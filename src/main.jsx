@@ -11,7 +11,7 @@ import About from "./Components/About.jsx";
 import Hero from "./Components/Hero.jsx";
 
 const router = createBrowserRouter([
-  { path: "/", element: <App /> },
+  { path: "/Portfolio", element: <App /> },
   { path: "/hero", element: <Hero /> },
   { path: "/experience", element: <Experience /> },
   { path: "/project", element: <Project /> },
