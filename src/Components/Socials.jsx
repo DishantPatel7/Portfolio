@@ -27,7 +27,7 @@ const Socials = ({ containerStyle, iconStyle }) => {
           <Link
             key={index}
             to={item.path}
-            className="w-9 h-9 border border-primary text-primary rounded-full flex justify-center items-center text-base hover:bg-primary hover:text-black hover:transition-all duration-500"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-primary text-base text-primary duration-500 hover:bg-primary hover:text-black hover:transition-all"
           >
             {item.icon}
           </Link>

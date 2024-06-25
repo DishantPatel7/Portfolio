@@ -37,7 +37,16 @@ export const PROJECTS = [
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-    link1: "https://github.com/DishantPatel7/React-App-Gamers-Armary",
+    link1: "https://dishantpatel7.github.io/React-App-Gamers-Armary/",
+    link2: "https://github.com/DishantPatel7/React-App-Gamers-Armary",
+  },
+  {
+    title: "E-Commerce Website",
+    img: project1,
+    description:
+      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    link1: "https://dishantpatel7.github.io/React-App-Gamers-Armary/",
     link2: "https://github.com/DishantPatel7/React-App-Gamers-Armary",
   },
   {
@@ -61,7 +70,6 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  phoneNo: "+91 8511562330 ",
+  email: "dishantpatel2782@gmail.com",
 };

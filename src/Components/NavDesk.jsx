@@ -23,8 +23,6 @@ const NavDesk = () => {
           <button className="rounded-[7px] bg-purple-500 p-2">Hire Me</button>
         </Link>
       </nav>
-
-      
     </>
   );
 };

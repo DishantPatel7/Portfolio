@@ -4,7 +4,7 @@ import img2 from "../assets/112.png";
 
 const Photo = () => {
   return (
-    <div className="w-full h-full relative">
+    <div className="relative h-full w-full">
       {/* image */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -17,17 +17,21 @@ const Photo = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: .7, duration: 0.5, ease: "easeIn" },
+            transition: { delay: 0.7, duration: 0.5, ease: "easeIn" },
           }}
-          className="w-[298px] h-[298px] lg:w-[498px] lg:h-[498px] flex justify-center items-center g-slate-200 mix-blend-lighten absolute"
+          className="g-slate-200 absolute flex h-[298px] w-[298px] items-center justify-center mix-blend-lighten lg:h-[498px] lg:w-[498px]"
         >
-          <img src={img} alt="" className="rounded-[50%] w-full h-full object-contain" />
+          <img
+            src={img}
+            alt=""
+            className="h-full w-full rounded-[50%] object-contain"
+          />
         </motion.div>
       </motion.div>
 
       {/* circle */}
       <motion.svg
-        className="w-[300px] lg:w-[506px] h-[300px] lg:h-[506px]"
+        className="h-[300px] w-[300px] lg:h-[506px] lg:w-[506px]"
         fill="transparent"
         viewBox="0 0 506 506"
         xmlns="http://www.w3.org/2000/svg"

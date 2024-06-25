@@ -21,7 +21,7 @@ const Technologies = () => {
   });
 
   return (
-    <div className="border-b border-neutral-900 pb-24 -z-10">
+    <div className="-z-10 border-b border-neutral-900 pb-24">
       <motion.h2
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4 -z-10"
+        className="-z-10 flex flex-wrap items-center justify-center gap-4"
       >
         <motion.div
           variants={iconVariants(2)}

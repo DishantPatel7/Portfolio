@@ -29,8 +29,8 @@ const Navbar = () => {
         <NavMobile isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       )}
 
-      <div className="mb-12 hidden lg:flex items-center justify-center py-10 top-0 -z-100">
-        <nav className="fixed max-w-screen-lg bg-[#2a245486] rounded-xl shadow-lg shadow-[#2e31556b] mx-auto py-3 px-20 ">
+      <div className="relative top-0 z-50 mb-12 hidden items-center justify-center py-10 lg:flex">
+        <nav className="fixed mx-auto max-w-screen-lg rounded-xl bg-[#2a245486] px-20 py-3 shadow-lg shadow-[#2e31556b]">
           <ul className="flex items-center gap-16">
             {/* {links.map((link, index) => {
               return (
@@ -90,10 +90,10 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      <div className="p-3 fixed top-0 right-0 z-50">
+      <div className="fixed right-0 top-0 z-50 p-3">
         <button
           onClick={toggleMenu}
-          className="w-11 h-11 text-2xl mt-3 mr-1 text-sky-300 bg-blue-800/40 border border-sky-900/80 backdrop-blur-lg flex justify-center items-center rounded lg:hidden z-50 ml-auto"
+          className="z-50 ml-auto mr-1 mt-3 flex h-11 w-11 items-center justify-center rounded border border-sky-900/80 bg-blue-800/40 text-2xl text-sky-300 backdrop-blur-lg lg:hidden"
         >
           {isMenuOpen ? (
             <RiCloseLargeLine className="text-primary" />

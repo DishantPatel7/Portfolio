@@ -4,11 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  width: 5px;
+  height: 100px;
+}
+::-webkit-scrollbar-thumb{
+  background-color:var(--color-primary);
+}
+::-webkit-scrollbar-track{
+  background:black;
+}
+
 :root {
   font-family: "Inter", sans-serif;
   /* font-family: "Great Vibes", cursive; */
   --color-primary: #00ff99;
-  --color-secondary: #00ff99ab;
+  --color-secondary: #00ff99cd;
 }
 @layer components {
   .menu-item {

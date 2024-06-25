@@ -16,8 +16,8 @@ const NavMobile = ({ isOpen, setIsMenuOpen }) => {
   };
 
   return (
-    <div className="w-screen fixed top-0 left-0 z-20">
-      <div className="w-3/4 h-screen flex flex-col p-8 bg-[#141414]">
+    <div className="fixed left-0 top-0 z-20 w-screen">
+      <div className="flex h-screen w-3/4 flex-col bg-[#141414] p-8">
         <div className="ui-circle -ml-20 -mt-10" />
 
         <ul>
@@ -76,7 +76,7 @@ const NavMobile = ({ isOpen, setIsMenuOpen }) => {
         </ul>
 
         <button
-          className="h-10 bg-primary text-black text-sm md:text-xl px-6 rounded hover:bg-blue-200 hover:text-blue-500 md:block"
+          className="h-10 rounded bg-primary px-6 text-sm text-black hover:bg-blue-200 hover:text-blue-500 md:block md:text-xl"
           onClick={() => {
             handleScroll("contact");
           }}
@@ -86,7 +86,7 @@ const NavMobile = ({ isOpen, setIsMenuOpen }) => {
       </div>
       <div
         onClick={() => setIsMenuOpen(false)}
-        className="w-screen h-screen fixed top-0 -z-10"
+        className="fixed top-0 -z-10 h-screen w-screen"
       />
     </div>
   );

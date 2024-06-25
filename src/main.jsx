@@ -17,12 +17,12 @@ const router = createBrowserRouter([
   { path: "/project", element: <Project /> },
   { path: "/education", element: <Education /> },
   { path: "/contact", element: <Contact /> },
-  { path: "/about", element: <About/> },
+  { path: "/about", element: <About /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <App /> */}
-    <RouterProvider router={router}/>
-  </React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>,
 );

@@ -5,20 +5,18 @@ import Socials from "./Socials";
 import Photo from "./Photo";
 
 const Hero = () => {
-  const downloadFile = () => {};
-
   return (
     <section className="h-full" id="hero">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col lg:flex-row items-center justify-between pt-16 lg:pt-8 lg:pb-24">
+        <div className="flex flex-col items-center justify-between pt-16 lg:flex-row lg:pb-24 lg:pt-8">
           {/*text  */}
-          <div className="text-center lg:text-left order-2 lg:order-none">
+          <div className="order-2 text-center lg:order-none lg:text-left">
             <span className="text-xl">Forntend Developer</span>
             <h1 className="h1 mb-6">
               Hello I'm <br />
               <span className="text-primary">Dishant Patel</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
+            <p className="mb-9 max-w-[500px] text-white/80">
               A frontend developer who loves making websites easy to use and
               visually appealing. I enjoy creating interfaces that people enjoy
               using and find helpful.
@@ -26,11 +24,16 @@ const Hero = () => {
               proficient in various programming languages and technologies. */}
             </p>
             {/* btn and socials */}
-            <div className="flex flex-col lg:flex-row justify-center lg:justify-start items-center gap-8">
+            <div className="flex flex-col items-center justify-center gap-8 lg:flex-row lg:justify-start">
               <a href="Dishant's Resume.pdf" download="Dishant's Resume">
-                <button className="text-primary border-2 outline-0 border-primary flex items-center px-5 py-2 gap-2 font-bold text-[15px] rounded-3xl hover:bg-primary hover:text-black hover:transition-all duration-500">
+                <button className="flex items-center gap-2 rounded-3xl border-2 border-primary px-5 py-2 text-[15px] font-bold text-primary outline-0 duration-500 hover:bg-primary hover:text-black hover:transition-all">
                   <span>Download CV </span>
                   <FiDownload />
+                </button>
+              </a>
+              <a href="">
+                <button className="flex items-center gap-2 rounded-3xl border-2 border-primary px-5 py-2 text-[15px] font-bold text-primary outline-0 duration-500 hover:bg-primary hover:text-black hover:transition-all">
+                  <span>Hire Me</span>
                 </button>
               </a>
               <div className="mb-8 lg:mb-0">
@@ -43,7 +46,7 @@ const Hero = () => {
           </div>
 
           {/*Photo  */}
-          <div className="order-1 lg:order-none mb-8 lg:mb-0">
+          <div className="order-1 mb-8 lg:order-none lg:mb-0">
             <Photo />
           </div>
         </div>

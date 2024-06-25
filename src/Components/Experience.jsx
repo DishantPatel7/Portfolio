@@ -4,7 +4,7 @@ import { EXPERIENCES } from "../constants";
 const Experience = () => {
   return (
     <div
-      className="border-b border-neutral-900 pb-4 px-2 pt-12 "
+      className="border-b border-neutral-900 px-2 pb-4 pt-12"
       id="experience"
     >
       <h2 className="my-20 text-center text-4xl">Experience</h2>
@@ -14,14 +14,14 @@ const Experience = () => {
             <div className="w-full lg:w-1/4">
               <p className="mb-2 text-sm text-neutral-300">{experience.year}</p>
             </div>
-            <div className="w-full max-w-xl lg:w-3/4">
+            <div className="w-full lg:w-3/4 lg:max-w-xl">
               <h6 className="mb-2 font-semibold">
                 {experience.role} -{" "}
-                <span className=" text-sm text-secondary">
+                <span className="text-sm text-primary">
                   {experience.company}
                 </span>
               </h6>
-              <p className="mb-4 text-neutral-400 text-justify">
+              <p className="mb-4 text-justify text-neutral-400">
                 {experience.description}
               </p>
               {experience.technologies.map((tech, index) => (
