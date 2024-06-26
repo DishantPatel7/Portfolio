@@ -21,12 +21,12 @@ const Technologies = () => {
   });
 
   return (
-    <div className="-z-10 border-b border-neutral-900 pb-24">
+    <div className="div-css border-none" id="technologies">
       <motion.h2
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+        className="h2-heading"
       >
         Technologies
       </motion.h2>

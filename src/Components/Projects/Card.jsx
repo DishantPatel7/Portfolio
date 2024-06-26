@@ -1,12 +1,13 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Card = (props) => {
   return (
-    <div className="relative h-[450px] w-[320px] overflow-auto rounded-2xl bg-slate-400 lg:h-[500px] lg:w-[380px]">
-      <div className="absolute h-full w-full">
-        <div className="h-[75%] w-full bg-red-700">
+    <div className="group relative h-[450px] w-[320px] overflow-hidden rounded-2xl bg-neutral-900 lg:h-[500px] lg:w-[380px]">
+      <div className="duration-600 absolute h-full w-full transition-all group-hover:opacity-50">
+        <div className="b-red-700 h-[75%] w-full">
           <img
             src={props.project.img}
             className="h-full w-full rounded-b-[180px]"
@@ -14,11 +15,15 @@ const Card = (props) => {
         </div>
 
         {/* data */}
-        <h2 className="px-5 py-3">{props.project.title}</h2>
+        <h2 className="py-7 text-center text-xl font-semibold text-primary group-hover:opacity-0">
+          {props.project.title} | ReactJS
+        </h2>
       </div>
-      <div className="absolute h-full w-full bg-gradient-to-t from-[#000] px-6 pt-20 opacity-0 hover:opacity-100 lg:pt-32">
-        <h2 className="py-3 text-2xl">{props.project.title}</h2>
-        <p>{props.project.description}</p>
+      <div className="lg:pt-30 absolute h-full w-full translate-y-full bg-gradient-to-t from-[#000000] px-6 pt-20 opacity-0 transition-all duration-1000 group-hover:translate-y-0 group-hover:opacity-100">
+        <h2 className="py-10 text-2xl font-semibold text-primary">
+          {props.project.title}
+        </h2>
+        <p className="text-base font-semibold">{props.project.description}</p>
         <div className="flex flex-wrap gap-2 py-3">
           {props.project.technologies.map((tech, index) => {
             return (

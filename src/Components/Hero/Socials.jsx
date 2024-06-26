@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";
-
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 const socials = [
   {
     icon: <FaGithub />,
@@ -11,7 +11,7 @@ const socials = [
     path: "",
   },
   {
-    icon: <FaYoutube />,
+    icon: <AiFillInstagram />,
     path: "",
   },
   {
@@ -24,11 +24,7 @@ const Socials = ({ containerStyle, iconStyle }) => {
     <div className={containerStyle}>
       {socials.map((item, index) => {
         return (
-          <Link
-            key={index}
-            to={item.path}
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-primary text-base text-primary duration-500 hover:bg-primary hover:text-black hover:transition-all"
-          >
+          <Link key={index} to={item.path} className={iconStyle}>
             {item.icon}
           </Link>
         );

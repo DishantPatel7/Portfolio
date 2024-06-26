@@ -10,6 +10,7 @@ const links = [
   { name: "project", path: "/project" },
   { name: "education", path: "/education" },
   { name: "contact", path: "/contact" },
+  { name: "#technologies", path: "/contact" },
 ];
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState();
@@ -36,9 +37,9 @@ const Navbar = () => {
               return (
                 <li>
                   <Link
-                    className="menu-item capitalize"
+                    className="menu-item  "
                     onClick={() => {
-                      handleScroll(`"${link.path}"`);
+                      handleScroll({link.name});
                       console.log(handleScroll);
                     }}
                   >
@@ -48,16 +49,13 @@ const Navbar = () => {
               );
             })} */}
             <li>
-              <Link
-                className="menu-item capitalize"
-                onClick={() => handleScroll("home")}
-              >
+              <Link className="menu-item" onClick={() => handleScroll("hero")}>
                 home
               </Link>
             </li>
             <li>
               <Link
-                className="menu-item capitalize"
+                className="menu-item"
                 onClick={() => handleScroll("experience")}
               >
                 experience
@@ -65,23 +63,24 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                className="menu-item capitalize"
+                className="menu-item"
                 onClick={() => handleScroll("project")}
               >
                 project
               </Link>
             </li>
             <li>
-              <Link
-                className="menu-item capitalize"
-                onClick={() => handleScroll("education")}
+              <a
+                herf={links.name}
+                className="menu-item"
+                // onClick={() => handleScroll("technologies")}
               >
-                education
-              </Link>
+                skill
+              </a>
             </li>
             <li>
               <Link
-                className="menu-item capitalize"
+                className="menu-item"
                 onClick={() => handleScroll("contact")}
               >
                 contact

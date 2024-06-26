@@ -3,12 +3,12 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Experience from "./Components/Experience.jsx";
-import Project from "./Components/Project.jsx";
-import Education from "./Components/Education.jsx";
-import Contact from "./Components/Contact.jsx";
-import About from "./Components/About.jsx";
-import Hero from "./Components/Hero.jsx";
+import Hero from "./Components/Hero/Hero.jsx";
+import Experience from "./Components/Experience/Experience.jsx";
+import Project from "./Components/Projects/Project.jsx";
+import Education from "./Components/Education/Education.jsx";
+import Contact from "./Components/Contact/Contact.jsx";
+import About from "./Components/About/About.jsx";
 
 const router = createBrowserRouter([
   { path: "/Portfolio", element: <App /> },
