@@ -8,11 +8,22 @@
   font-family: "Inter", sans-serif;
   --color-primary: #00ff99;
   --color-secondary: #00ff99cd;
+  --bg-dark1: black;
+  --bg-dark2: white;
 }
-
-html {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @apply transition-colors duration-100;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
   scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 100px;
@@ -26,7 +37,7 @@ html {
 
 @layer components {
   .div-css {
-    @apply border-b border-neutral-900 px-2 pb-4 pt-5 lg:pt-10;
+    @apply border-b border-neutral-900 px-2 pb-24 pt-0 lg:pb-32 lg:pt-10;
   }
 
   .h2-heading {
@@ -34,11 +45,11 @@ html {
   }
 
   .menu-item {
-    @apply relative cursor-pointer text-xs capitalize text-white after:absolute after:-bottom-2 after:left-0 after:h-[3px] after:w-full after:-translate-x-11 after:rounded after:bg-blue-500 after:opacity-0 after:transition-all after:content-[''] after:hover:translate-x-0 after:hover:opacity-100 lg:text-sm;
+    @apply relative cursor-pointer text-base capitalize text-white after:absolute after:-bottom-2 after:left-0 after:h-[3px] after:w-full after:-translate-x-11 after:rounded after:bg-secondary after:opacity-0 after:transition-all after:content-[''] hover:text-primary after:hover:translate-x-0 after:hover:opacity-100 lg:text-sm;
   }
 
   .ui-circle {
-    @apply h-[130px] w-[130px] origin-top-left rotate-[-36.39deg] rounded-[117px] border-b-2 border-sky-500 lg:h-[180px] lg:w-[180px];
+    @apply h-[130px] w-[130px] origin-top-left rotate-[-36.39deg] rounded-[117px] border-b-2 border-primary lg:h-[180px] lg:w-[180px];
   }
 
   .h1 {

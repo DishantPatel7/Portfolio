@@ -20,7 +20,7 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 0.7, duration: 0.5, ease: "easeIn" },
           }}
-          className="g-slate-200 absolute flex h-[298px] w-[298px] items-center justify-center mix-blend-lighten lg:h-[498px] lg:w-[498px]"
+          className="g-slate-200 absolute flex h-[298px] w-[298px] items-center justify-center lg:h-[498px] lg:w-[498px]"
         >
           <img
             src={img}

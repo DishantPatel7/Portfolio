@@ -5,7 +5,7 @@ import { IoMailOpenSharp } from "react-icons/io5";
 
 const Contact = () => {
   return (
-    <div className="div-css" id="contact">
+    <div className="div-css border-none pb-3" id="contact">
       <h2 className="h2-heading">Get in Touch</h2>
       <div className="-mt-7 mb-10 text-center tracking-tight">
         <p className="my-4 flex items-center justify-center">

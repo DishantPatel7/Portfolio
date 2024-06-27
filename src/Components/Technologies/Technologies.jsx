@@ -21,7 +21,7 @@ const Technologies = () => {
   });
 
   return (
-    <div className="div-css border-none" id="technologies">
+    <div className="div-css" id="technologies">
       <motion.h2
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}

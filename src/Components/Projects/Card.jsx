@@ -15,12 +15,12 @@ const Card = (props) => {
         </div>
 
         {/* data */}
-        <h2 className="py-7 text-center text-xl font-semibold text-primary group-hover:opacity-0">
+        <h2 className="py-7 text-center text-base font-semibold text-primary group-hover:opacity-0 lg:text-xl">
           {props.project.title} | ReactJS
         </h2>
       </div>
-      <div className="lg:pt-30 absolute h-full w-full translate-y-full bg-gradient-to-t from-[#000000] px-6 pt-20 opacity-0 transition-all duration-1000 group-hover:translate-y-0 group-hover:opacity-100">
-        <h2 className="py-10 text-2xl font-semibold text-primary">
+      <div className="lg:pt-30 transition-al1 absolute h-full w-full translate-y-full bg-gradient-to-t from-[#000000] px-6 pt-14 opacity-0 duration-1000 group-hover:translate-y-0 group-hover:opacity-100">
+        <h2 className="py-8 text-xl font-semibold text-primary lg:py-10 lg:text-2xl">
           {props.project.title}
         </h2>
         <p className="text-base font-semibold">{props.project.description}</p>

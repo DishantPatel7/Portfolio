@@ -9,9 +9,13 @@ export default {
       },
       backgroundColor: {
         primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        dark1: "var(--bg-dark1)",
+        dark2: "var(--bg-dark2)",
       },
       borderColor: {
         primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
       },
     },
 
@@ -20,4 +24,5 @@ export default {
     },
   },
   plugins: [],
+  darkMode: "class",
 };

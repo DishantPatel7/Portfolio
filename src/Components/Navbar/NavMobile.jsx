@@ -37,8 +37,8 @@ const NavMobile = ({ isOpen, setIsMenuOpen }) => {
             </a>
           </li>
           <li className="mb-5">
-            <a className="menu-item" onClick={() => handleScroll("education")}>
-              education
+            <a className="menu-item" onClick={() => handleScroll("technologies")}>
+              skill
             </a>
           </li>
           {/* {links.map((link, index) => {

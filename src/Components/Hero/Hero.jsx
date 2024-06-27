@@ -7,7 +7,7 @@ import { HERO_CONTENT } from "../../constants";
 
 const Hero = () => {
   return (
-    <section className="h-full" id="hero">
+    <section className="h-full lg:pt-32" id="hero">
       <div className="container mx-auto h-full">
         <div className="flex flex-col items-center justify-between pt-16 lg:flex-row lg:pb-24 lg:pt-5">
           {/*text  */}
@@ -17,7 +17,7 @@ const Hero = () => {
               Hello I'm <br />
               <span className="text-primary">Dishant Patel</span>
             </h1>
-            <p className="mb-9 max-w-[500px] text-white/80">
+            <p className="mb-9 max-w-[500px] text-black dark:text-white/80 ">
               {HERO_CONTENT}
               {/* I excel at crafting elegant digital experiences and I am 
               proficient in various programming languages and technologies. */}
@@ -25,13 +25,13 @@ const Hero = () => {
             {/* btn and socials */}
             <div className="flex flex-row flex-wrap items-center justify-center gap-5 lg:justify-start">
               <a href="Dishant's Resume.pdf" download="Dishant's Resume">
-                <button className="flex items-center gap-2 rounded-3xl border-2 border-primary px-5 py-2 text-[15px] font-bold text-primary outline-0 duration-500 hover:bg-primary hover:text-black hover:transition-all">
-                  <span>Download CV </span>
-                  <FiDownload />
+                <button className="flex items-center gap-3 rounded-3xl border-2 border-primary px-5 py-2 text-[16px] font-bold text-primary outline-0 duration-500 hover:bg-primary hover:text-black hover:transition-all">
+                  <span>Download CV</span>
+                  <FiDownload className="text-base" />
                 </button>
               </a>
               <a href="#contact">
-                <button className="flex items-center gap-2 rounded-3xl border-2 border-primary bg-primary px-5 py-2 text-[15px] font-bold text-black outline-0 duration-500 hover:bg-black hover:text-primary hover:transition-all">
+                <button className="flex items-center gap-2 rounded-3xl border-2 border-primary bg-primary px-5 py-2 text-[16px] font-bold text-black outline-0 duration-500 hover:bg-black hover:text-primary hover:transition-all">
                   <span>Hire Me</span>
                 </button>
               </a>
@@ -50,6 +50,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      
     </section>
   );
 };

@@ -26,12 +26,16 @@ const Navbar = () => {
   };
   return (
     <>
+      {/* mobile navbar  */}
+
       {isMenuOpen && (
         <NavMobile isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       )}
 
-      <div className="relative top-0 z-50 mb-12 hidden items-center justify-center py-10 lg:flex">
-        <nav className="fixed mx-auto max-w-screen-lg rounded-xl bg-[#2a245486] px-20 py-3 shadow-lg shadow-[#2e31556b]">
+      {/* desktop navbar  */}
+
+      <div className="fixed top-0 z-50 hidden w-full items-center justify-center py-5 lg:flex">
+        <nav className="mx-auto max-w-screen-lg rounded-xl bg-[#2a245486] px-20 py-3 shadow-lg shadow-[#2e31556b]">
           <ul className="flex items-center gap-16">
             {/* {links.map((link, index) => {
               return (
@@ -70,13 +74,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a
-                herf={links.name}
+              <Link
                 className="menu-item"
-                // onClick={() => handleScroll("technologies")}
+                onClick={() => handleScroll("technologies")}
               >
                 skill
-              </a>
+              </Link>
             </li>
             <li>
               <Link
@@ -89,10 +92,13 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
+
+      {/* mobile navbar toggle button */}
+
       <div className="fixed right-0 top-0 z-50 p-3">
         <button
           onClick={toggleMenu}
-          className="z-50 ml-auto mr-1 mt-3 flex h-11 w-11 items-center justify-center rounded border border-sky-900/80 bg-blue-800/40 text-2xl text-sky-300 backdrop-blur-lg lg:hidden"
+          className="z-50 ml-auto mr-1 mt-3 flex h-11 w-11 items-center justify-center rounded border border-secondary bg-blue-800/40 text-2xl backdrop-blur-lg lg:hidden"
         >
           {isMenuOpen ? (
             <RiCloseLargeLine className="text-primary" />
