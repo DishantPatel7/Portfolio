@@ -19,7 +19,7 @@ export const EDUCATION = [
   },
   {
     id: 2,
-    year: "Jun 2020 - March 2024",
+    year: "Jun 2019 - March 2020",
     degree: "GSHSEB (Gujarat) ",
     branch: "12th science",
     institute: "Jay Somanath Higher Scondary School, Maninagar, Gujarat",
