@@ -21,19 +21,16 @@ const TopBtn = () => {
   }, []);
 
   const handleScrollNav = (sectionId) => {
-    if (isMenuOpen) {
-      setIsMenuOpen(false);
-    }
     document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <motion.a
-      href="#"
+      onClick={() => handleScrollNav("hero")}
       initial={{ opacity: 0 }}
       animate={{ opacity: isVisible ? 1 : 0 }}
       transition={{ duration: 0.7 }}
-      className="fixed bottom-12 right-5 rounded border-primary bg-primary p-3 lg:bottom-11 lg:right-14"
+      className="fixed bottom-12 right-5 cursor-pointer rounded border-primary bg-primary p-3 lg:bottom-11 lg:right-14"
     >
       <FaArrowUpLong className="text-lg text-black" />
     </motion.a>
