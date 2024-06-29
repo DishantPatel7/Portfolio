@@ -1,6 +1,6 @@
 import React from "react";
 import aboutImg from "../../assets/about.jpg";
-import { ABOUT_US, EDUCATION } from "../../constants";
+import { ABOUT_US } from "../../constants";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -9,7 +9,9 @@ const About = () => {
       <motion.h2
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5 }} className="h2-heading">
+        transition={{ duration: 1.5 }}
+        className="h2-heading"
+      >
         About <span className="text-neutral-500">Me</span>
       </motion.h2>
       <div className="flex flex-wrap">
@@ -19,27 +21,19 @@ const About = () => {
           </div>
         </div>
         <div className="w-full lg:w-[60%]">
-          <div className="flex flex-col justify-center pt-5 lg:justify-start">
-            <p className="my-2 max-w-xl text-justify text-sm lg:text-base">
+          <div className="pt-7">
+            <h2 className="h2">
+              <span className="text-primary">Hi</span> 👋,
+              <span className="text-primary">I'</span>m Dishant
+            </h2>
+            <p className="py-5 text-justify">
+              <span className="font-semibold">Welcome to My Portfolio!</span>
+              <br />
               {ABOUT_US}
             </p>
-            <div className="my-5 max-w-xl text-left lg:text-justify">
-              <h3 className="h3 pt-8">Education</h3>
-              {EDUCATION.map((edu, index) => {
-                return (
-                  <div className="mt-9" key={index}>
-                    <h5 className="flex flex-wrap items-center justify-between text-base tracking-tight">
-                      {edu.degree}
-                      <span className="text-xs text-primary">{edu.year}</span>
-                    </h5>
-                    <h4 className="text-2xl font-semibold leading-loose text-primary">
-                      {edu.branch}
-                    </h4>
-                    <p className="pt-1 text-sm">{edu.institute}</p>
-                  </div>
-                );
-              })}
-            </div>
+            <p className="font-semibold">
+              Experience : <span className="font-normal">6 Months+</span>
+            </p>
           </div>
         </div>
       </div>

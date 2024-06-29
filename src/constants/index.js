@@ -1,64 +1,90 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import p1 from "../assets/projects/p1.png";
+import p2 from "../assets/projects/p2.png";
+import p3 from "../assets/projects/p3.png";
+import p4 from "../assets/projects/p4.png";
 
-export const HERO_CONTENT = `A frontend developer who loves making websites easy to use and visually appealing. I enjoy creating interfaces that people enjoy using and find helpful.`;
+export const HERO_CONTENT =
+  "A frontend developer who loves making websites easy to use and visually appealing. I enjoy creating interfaces that people enjoy using and find helpful.";
 
-export const ABOUT_US = `A frontend developer who loves making websites easy to use and visually appealing. I enjoy creating interfaces that people enjoy using and find helpful`;
+export const ABOUT_US =
+  "I'm a passionate frontend developer with expertise in HTML, CSS, JavaScript, and React. With a Bachelor's degree in Information Technology, I've honed my skills through hands-on projects like responsive websites, interactive web applications, and a personal portfolio showcasing my design aesthetics and coding proficiency. I excel in creating seamless user experiences and leveraging modern frameworks like React to build dynamic interfaces. Passionate about learning, I stay updated with industry trends and enjoy exploring UI/UX principles. I'm eager to contribute my creativity and technical skills to dynamic teams and projects in frontend development.";
 
 export const EDUCATION = [
   {
+    id: 1,
     year: "Nov 2020 - May 2024",
-    degree: "Bachelor in Engineering",
+    degree: "Bachelor in Engineering (GTU)",
     branch: "Information Technology",
     institute: " Gandhinagar Institute of Technology, Gandhinagar, Gujarat",
   },
   {
-    year: "Nov 2020 - May 2024",
-    degree: "12th science",
+    id: 2,
+    year: "Jun 2020 - March 2024",
+    degree: "GSHSEB (Gujarat) ",
     branch: "12th science",
-    institute: " Gandhinagar Institute of Technology, Gandhinagar, Gujarat",
+    institute: "Jay Somanath Higher Scondary School, Maninagar, Gujarat",
+  },
+  {
+    id: 3,
+    year: "Jun 2017 - March 2018",
+    degree: "GSEB (Gujarat) ",
+    branch: "10th Standard",
+    institute: "J. L. Higher Scondary School, Maninagar, Gujarat",
   },
 ];
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    id: 1,
+    year: "Jan 2024 - Present",
+    role: "Frontend Developer",
+    company: "Skytech Pvt. Ltd.",
+    description:
+      "During a this internship , I focused on web development with React.js, a leading JavaScriptlibrary for building userinterfaces. Throughout the internship, I honed my skills in React.js, including proficiency in component-based architecture, state management, and routing. I gained practical experience in developing dynamic and interactive web applications.",
+    technologies: ["Javascript", "React.js", "HTML5", "CSS3", "Tailwind"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    img: project2,
+    id: 1,
+    title: "Gamer's Armary | E-Commerce Website",
+    img: p1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Gamer’s Armary is E-commerce website for gaming related stuff like games, console, controller and related accessories etc.",
+    technologies: ["ReactJS", "Javascript", "HTML5", "CSS3"],
     link1: "https://dishantpatel7.github.io/React-App-Gamers-Armary/",
     link2: "https://github.com/DishantPatel7/React-App-Gamers-Armary",
   },
   {
-    title: "E-Commerce Website",
-    img: project3,
+    id: 2,
+    title: "Weather App | Fetch API",
+    img: p2,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-    link1: "https://github.com/DishantPatel7/React-App-Gamers-Armary",
-    link2: "https://github.com/DishantPatel7/React-App-Gamers-Armary",
+      "In this project I built a web application use Fetch API that show information of weather when you search city. In that show details like Temperature, Humidity, Feels like etc.",
+    technologies: ["ReactJS", "Javascript", "HTML5", "CSS3", "Fetch API"],
+    link1: "https://dishantpatel7.github.io/Weather-App/",
+    link2: "https://github.com/DishantPatel7/Weather-App",
   },
   {
-    title: "E-Commerce Website",
-    img: project2,
+    id: 3,
+    title: "TravelO'pedia",
+    img: p3,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-    link1: "https://github.com/DishantPatel7/React-App-Gamers-Armary",
-    link2: "https://github.com/DishantPatel7/React-App-Gamers-Armary",
+      "In this project we built a website having motive to guide people through the most renowned places of the particular city and also providing related information.",
+    technologies: ["Javascript", "HTML5", "CSS3", "Bootstrap"],
+    link1: "https://dishantpatel7.github.io/TravelOpedia-website/",
+    link2: "https://github.com/DishantPatel7/TravelOpedia-website",
+  },
+  {
+    id: 4,
+    title: "Agruco website",
+    img: p4,
+    description:
+      "A Agruco website is clone of original website that i made with reasponsible website make for different size of devieces.",
+    technologies: ["Javascript", "HTML5", "CSS3"],
+    link1: "https://dishantpatel7.github.io/Agruco-website/",
+    link2: "https://github.com/DishantPatel7/Agruco-website",
   },
 ];
 

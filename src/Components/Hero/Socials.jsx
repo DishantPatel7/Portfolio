@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-const socials = [
+const SOCIALS = [
   {
     icon: <FaGithub />,
-    path: "",
+    path: "https://github.com/DishantPatel7",
   },
   {
     icon: <FaLinkedinIn />,
-    path: "",
+    path: "https://www.linkedin.com/in/dishantpatel2782/",
   },
   {
     icon: <AiFillInstagram />,
@@ -22,7 +22,7 @@ const socials = [
 const Socials = ({ containerStyle, iconStyle }) => {
   return (
     <div className={containerStyle}>
-      {socials.map((item, index) => {
+      {SOCIALS.map((item, index) => {
         return (
           <Link key={index} to={item.path} className={iconStyle}>
             {item.icon}

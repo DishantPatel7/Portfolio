@@ -18,8 +18,8 @@ const Experience = () => {
       // whileInView={{ opacity: 1, x: 0 }}
       // transition={{ duration: 1.5, delay: .5}}
       >
-        {EXPERIENCES.map((experience, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+        {EXPERIENCES.map((experience) => (
+          <div key={experience.id} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -51,12 +51,13 @@ const Experience = () => {
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1.5,damping:1 ,delay:1.4}}
+                transition={{ duration: 1.5, damping: 1, delay: 1.4 }}
+                className="flex flex-wrap gap-4 py-3"
               >
                 {experience.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-secondary"
+                    className="rounded bg-neutral-800 px-2 py-1 text-sm font-semibold text-secondary"
                   >
                     {tech}
                   </span>

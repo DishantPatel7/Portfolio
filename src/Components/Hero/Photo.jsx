@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import img from "../../assets/new-removebg-preview.png";
-import img2 from "../../assets/112.png";
 
 
 const Photo = () => {

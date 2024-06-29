@@ -37,11 +37,11 @@ body {
 
 @layer components {
   .div-css {
-    @apply border-b border-neutral-900 px-2 pb-24 pt-0 lg:pb-32 lg:pt-10;
+    @apply border-b border-neutral-900 px-2 pb-20 lg:pb-24;
   }
 
   .h2-heading {
-    @apply my-20 text-center text-3xl font-semibold lg:text-5xl;
+    @apply my-20 text-center text-5xl font-black lg:font-bold lg:text-6xl;
   }
 
   .menu-item {
@@ -56,7 +56,7 @@ body {
     @apply text-[48px] font-semibold leading-[1.1] lg:text-[80px];
   }
   .h2 {
-    @apply text-[36px] font-semibold leading-[1.1] lg:text-[48px];
+    @apply text-[36px] font-semibold leading-[1.1] lg:text-[36px];
   }
   .h3 {
     @apply text-[25px] font-semibold leading-[1.1] lg:text-[24px];

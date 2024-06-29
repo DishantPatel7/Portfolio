@@ -9,6 +9,7 @@ import Technologies from "./Components/Technologies/Technologies";
 import Contact from "./Components/Contact/Contact";
 import TopBtn from "./Components/TopBtn";
 import Darkmode from "./Components/Navbar/Darkmode";
+import Education from "./Components/Education/Education";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -42,6 +43,7 @@ const App = () => {
             <Experience />
             <Project />
             <Technologies />
+            <Education />
             <Contact />
           </div>
           <TopBtn />

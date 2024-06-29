@@ -16,7 +16,7 @@ const Project = () => {
       </motion.h2>
       <div className="flex flex-wrap items-center justify-center gap-7">
         {PROJECTS.map((project) => {
-          return <Card project={project} />;
+          return <Card key={project.id} project={project} />;
         })}
       </div>
     </div>
