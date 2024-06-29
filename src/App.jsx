@@ -13,13 +13,13 @@ import Darkmode from "./Components/Navbar/Darkmode";
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
 
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme:dark)").matches) {
-      setDarkMode(true);
-    } else {
-      setDarkMode(false);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.matchMedia("(prefers-color-scheme:dark)").matches) {
+  //     setDarkMode(true);
+  //   } else {
+  //     setDarkMode(false);
+  //   }
+  // }, []);
 
   const darkModeToggle = () => {
     setDarkMode(!darkMode);
