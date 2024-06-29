@@ -1,13 +1,17 @@
 import React from "react";
 import aboutImg from "../../assets/about.jpg";
 import { ABOUT_US, EDUCATION } from "../../constants";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="div-css" id="about">
-      <h2 className="h2-heading">
+      <motion.h2
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }} className="h2-heading">
         About <span className="text-neutral-500">Me</span>
-      </h2>
+      </motion.h2>
       <div className="flex flex-wrap">
         <div className="w-full lg:w-[40%] lg:p-8">
           <div className="flex items-center justify-center">

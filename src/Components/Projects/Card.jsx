@@ -23,7 +23,7 @@ const Card = (props) => {
         <h2 className="py-8 text-xl font-semibold text-primary lg:py-10 lg:text-2xl">
           {props.project.title}
         </h2>
-        <p className="text-base font-semibold">{props.project.description}</p>
+        <p className="text-base font-semibold text-[#fff]">{props.project.description}</p>
         <div className="flex flex-wrap gap-2 py-3">
           {props.project.technologies.map((tech, index) => {
             return (
