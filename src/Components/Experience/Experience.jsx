@@ -32,7 +32,7 @@ const Experience = () => {
               <motion.h6
                 initial={{ opacity: 0, y: -100 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.5, delay: 1 }}
+                transition={{ duration: 1.5 }}
                 className="mb-2 font-semibold"
               >
                 {experience.role} -{" "}
@@ -43,7 +43,7 @@ const Experience = () => {
               <motion.p
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.5, delay: 1.2 }}
+                transition={{ duration: 1.5, delay: .3 }}
                 className="mb-4 text-justify text-neutral-400"
               >
                 {experience.description}
@@ -51,7 +51,7 @@ const Experience = () => {
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1.5, damping: 1, delay: 1.4 }}
+                transition={{ duration: 1.5, damping: 1, delay: .4 }}
                 className="flex flex-wrap gap-4 py-3"
               >
                 {experience.technologies.map((tech, index) => (

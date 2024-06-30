@@ -14,14 +14,14 @@ const About = () => {
       >
         About <span className="text-neutral-500">Me</span>
       </motion.h2>
-      <div className="flex flex-wrap">
-        <div className="w-full lg:w-[40%] lg:p-8">
+      <div className="flex flex-wrap lg:justify-center gap-14">
+        <div className="w-full lg:max-w-md">
           <div className="flex items-center justify-center">
             <img src={aboutImg} alt="" />
           </div>
         </div>
-        <div className="w-full lg:w-[60%]">
-          <div className="pt-7">
+        <div className="w-full lg:max-w-xl">
+          <div className="">
             <h2 className="h2">
               <span className="text-primary">Hi</span> 👋,
               <span className="text-primary">I'</span>m Dishant

@@ -61,7 +61,7 @@ export const PROJECTS = [
     title: "Weather App | Fetch API",
     img: p2,
     description:
-      "In this project I built a web application use Fetch API that show information of weather when you search city. In that show details like Temperature, Humidity, Feels like etc.",
+      "In this project I built a web app use Fetch API that show information of weather when you search city. It show details like Temperature, Humidity, Feels like etc.",
     technologies: ["ReactJS", "Javascript", "HTML5", "CSS3", "Fetch API"],
     link1: "https://dishantpatel7.github.io/Weather-App/",
     link2: "https://github.com/DishantPatel7/Weather-App",

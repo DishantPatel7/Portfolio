@@ -41,7 +41,7 @@ body {
   }
 
   .h2-heading {
-    @apply my-20 text-center text-5xl font-black lg:font-bold lg:text-6xl;
+    @apply my-20 text-center text-5xl font-black lg:text-6xl lg:font-bold;
   }
 
   .menu-item {
@@ -52,6 +52,9 @@ body {
     @apply h-[130px] w-[130px] origin-top-left rotate-[-36.39deg] rounded-[117px] border-b-2 border-primary lg:h-[180px] lg:w-[180px];
   }
 
+  .card-social {
+    @apply flex h-14 w-14 lg:h-20 lg:w-20 items-center justify-center rounded-full border-2 border-white text-2xl text-white duration-500 hover:bg-[#e5e5e5] hover:text-black hover:transition-all;
+  }
   .h1 {
     @apply text-[48px] font-semibold leading-[1.1] lg:text-[80px];
   }
