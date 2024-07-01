@@ -7,7 +7,7 @@ import { HERO_CONTENT } from "../../constants";
 
 const Hero = () => {
   return (
-    <section className="h-full lg:pt-32" id="hero">
+    <section className="h-full lg:pt-32" id="home">
       <div className="container mx-auto h-full">
         <div className="flex flex-col items-center justify-between pt-16 lg:flex-row lg:pb-24 lg:pt-5">
           {/*text  */}

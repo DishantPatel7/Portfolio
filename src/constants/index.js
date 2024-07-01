@@ -92,3 +92,20 @@ export const CONTACT = {
   phoneNo: "+91 8511562330 ",
   email: "dishantpatel2782@gmail.com",
 };
+
+export const NAV_LINK = {
+  link1: "home",
+  link2: "about us",
+  link3: "experience",
+  link4: "project",
+  link5: "contact me",
+};
+//not in use
+export const links = [
+  { name: "home", path: "home" },
+  { name: "experience", path: "experience" },
+  { name: "project", path: "project" },
+  { name: "education", path: "education" },
+  { name: "contact", path: "contact" },
+  { name: "#technologies", path: "contact" },
+];

@@ -3,15 +3,8 @@ import { Link } from "react-router-dom";
 import { RiMenu3Line } from "react-icons/ri";
 import { RiCloseLargeLine } from "react-icons/ri";
 import NavMobile from "./NavMobile";
+import { NAV_LINK } from "../../constants";
 
-const links = [
-  { name: "home", path: "/home" },
-  { name: "experience", path: "/experience" },
-  { name: "project", path: "/project" },
-  { name: "education", path: "/education" },
-  { name: "contact", path: "/contact" },
-  { name: "#technologies", path: "/contact" },
-];
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState();
 
@@ -53,8 +46,8 @@ const Navbar = () => {
               );
             })} */}
             <li>
-              <Link className="menu-item" onClick={() => handleScroll("hero")}>
-                home
+              <Link className="menu-item" onClick={() => handleScroll("home")}>
+                {NAV_LINK.link1}
               </Link>
             </li>
             <li>
@@ -62,7 +55,7 @@ const Navbar = () => {
                 className="menu-item"
                 onClick={() => handleScroll("about")}
               >
-                about us
+                {NAV_LINK.link2}
               </Link>
             </li>
             <li>
@@ -70,7 +63,7 @@ const Navbar = () => {
                 className="menu-item"
                 onClick={() => handleScroll("experience")}
               >
-                experience
+                {NAV_LINK.link3}
               </Link>
             </li>
             <li>
@@ -78,7 +71,7 @@ const Navbar = () => {
                 className="menu-item"
                 onClick={() => handleScroll("project")}
               >
-                project
+                {NAV_LINK.link4}
               </Link>
             </li>
             <li>
@@ -86,7 +79,7 @@ const Navbar = () => {
                 className="menu-item"
                 onClick={() => handleScroll("contact")}
               >
-                contact
+                {NAV_LINK.link5}
               </Link>
             </li>
           </ul>
