@@ -37,7 +37,7 @@ body {
 
 @layer components {
   .div-css {
-    @apply border-b border-neutral-900 px-2 pb-20 lg:pb-24;
+    @apply border-b border-neutral-900 px-2 pb-20 lg:pt-16 pt-10 lg:pb-24;
   }
 
   .h2-heading {

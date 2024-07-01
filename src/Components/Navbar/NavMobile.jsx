@@ -27,6 +27,11 @@ const NavMobile = ({ isOpen, setIsMenuOpen }) => {
             </a>
           </li>
           <li className="mb-5">
+            <a className="menu-item" onClick={() => handleScroll("about")}>
+              about us
+            </a>
+          </li>
+          <li className="mb-5">
             <a className="menu-item" onClick={() => handleScroll("experience")}>
               experience
             </a>
@@ -34,11 +39,6 @@ const NavMobile = ({ isOpen, setIsMenuOpen }) => {
           <li className="mb-5">
             <a className="menu-item" onClick={() => handleScroll("project")}>
               project
-            </a>
-          </li>
-          <li className="mb-5">
-            <a className="menu-item" onClick={() => handleScroll("technologies")}>
-              skill
             </a>
           </li>
           {/* {links.map((link, index) => {
@@ -56,7 +56,7 @@ const NavMobile = ({ isOpen, setIsMenuOpen }) => {
         </ul>
 
         <button
-          className="h-10 rounded bg-primary px-6 text-sm text-black hover:bg-blue-200 hover:text-blue-500 md:block md:text-xl"
+          className="h-10 rounded bg-primary px-6 text-sm text-black hover:bg-zinc-700 hover:text-white md:block md:text-xl"
           onClick={() => {
             handleScroll("contact");
           }}

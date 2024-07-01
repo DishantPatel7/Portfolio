@@ -60,6 +60,14 @@ const Navbar = () => {
             <li>
               <Link
                 className="menu-item"
+                onClick={() => handleScroll("about")}
+              >
+                about us
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="menu-item"
                 onClick={() => handleScroll("experience")}
               >
                 experience
@@ -71,14 +79,6 @@ const Navbar = () => {
                 onClick={() => handleScroll("project")}
               >
                 project
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="menu-item"
-                onClick={() => handleScroll("technologies")}
-              >
-                skill
               </Link>
             </li>
             <li>
