@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 const SOCIALS = [
@@ -24,9 +23,9 @@ const Socials = ({ containerStyle, iconStyle }) => {
     <div className={containerStyle}>
       {SOCIALS.map((item, index) => {
         return (
-          <Link key={index} to={item.path} className={iconStyle} target="_blank">
+          <a key={index} href={item.path} className={iconStyle} target="_blank">
             {item.icon}
-          </Link>
+          </a>
         );
       })}
     </div>

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { RiMenu3Line } from "react-icons/ri";
 import { RiCloseLargeLine } from "react-icons/ri";
 import NavMobile from "./NavMobile";
@@ -46,41 +45,32 @@ const Navbar = () => {
               );
             })} */}
             <li>
-              <Link className="menu-item" onClick={() => handleScroll("home")}>
+              <a className="menu-item" onClick={() => handleScroll("home")}>
                 {NAV_LINK.link1}
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                className="menu-item"
-                onClick={() => handleScroll("about")}
-              >
+              <a className="menu-item" onClick={() => handleScroll("about")}>
                 {NAV_LINK.link2}
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 className="menu-item"
                 onClick={() => handleScroll("experience")}
               >
                 {NAV_LINK.link3}
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                className="menu-item"
-                onClick={() => handleScroll("project")}
-              >
+              <a className="menu-item" onClick={() => handleScroll("project")}>
                 {NAV_LINK.link4}
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                className="menu-item"
-                onClick={() => handleScroll("contact")}
-              >
+              <a className="menu-item" onClick={() => handleScroll("contact")}>
                 {NAV_LINK.link5}
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const Card = ({ project }) => {
   return (
@@ -46,12 +45,12 @@ const Card = ({ project }) => {
           </div>
         </div>
         <div className="flex justify-center gap-8 pt-5">
-          <Link to={project.link1} target="_blank" className="card-social">
+          <a href={project.link1} target="_blank" className="card-social">
             <FaExternalLinkAlt />
-          </Link>
-          <Link to={project.link2} target="_blank" className="card-social">
+          </a>
+          <a href={project.link2} target="_blank" className="card-social">
             <FaGithub />
-          </Link>
+          </a>
         </div>
       </div>
     </motion.div>
