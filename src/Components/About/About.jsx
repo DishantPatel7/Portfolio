@@ -1,5 +1,7 @@
 import React from "react";
 import aboutImg from "../../assets/about.jpg";
+import img1 from "../../assets/img1.jpg";
+import img2 from "../../assets/img2.jpg";
 import { ABOUT_US } from "../../constants";
 import { motion } from "framer-motion";
 
@@ -14,13 +16,11 @@ const About = () => {
       >
         About <span className="text-neutral-500">Me</span>
       </motion.h2>
-      <div className="flex flex-wrap lg:justify-center gap-14">
-        <div className="w-full lg:max-w-md">
-          <div className="flex items-center justify-center">
-            <img src={aboutImg} alt="" />
-          </div>
-        </div>
-        <div className="w-full lg:max-w-xl">
+      <div className="flex flex-wrap gap-14 lg:justify-center">
+        {/* <div className="w-full flex items-center lg:max-w-md">
+          <img src={img2} alt="" />
+        </div> */}
+        <div className="w-full lg:max-w-4xl">
           <div className="">
             <h2 className="h2">
               <span className="text-primary">Hi</span> 👋,

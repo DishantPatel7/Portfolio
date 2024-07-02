@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import img from "../../assets/new-removebg-preview.png";
-
+import img1 from "../../assets/img1.jpg";
+import img2 from "../../assets/img2.jpg";
 
 const Photo = () => {
   return (
@@ -19,7 +20,7 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 0.7, duration: 0.5, ease: "easeIn" },
           }}
-          className="g-slate-200 absolute flex h-[298px] w-[298px] items-center justify-center lg:h-[498px] lg:w-[498px]"
+          className="absolute flex h-[298px] w-[298px] items-center justify-center md:h-[375px] md:w-[375px] lg:h-[498px] lg:w-[498px]"
         >
           <img
             src={img}
@@ -31,7 +32,7 @@ const Photo = () => {
 
       {/* circle */}
       <motion.svg
-        className="h-[300px] w-[300px] lg:h-[506px] lg:w-[506px]"
+        className="h-[300px] w-[300px] md:h-[379px] md:w-[379px] lg:h-[506px] lg:w-[506px]"
         fill="transparent"
         viewBox="0 0 506 506"
         xmlns="http://www.w3.org/2000/svg"

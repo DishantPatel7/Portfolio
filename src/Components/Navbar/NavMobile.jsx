@@ -11,7 +11,7 @@ const NavMobile = ({ isOpen, setIsMenuOpen }) => {
 
   return (
     <div className="fixed left-0 top-0 z-20 w-screen">
-      <div className="flex h-screen w-3/4 flex-col bg-[#141414e9] p-8">
+      <div className="flex h-screen w-3/4 flex-col bg-[#141414] p-8">
         <div className="ui-circle -ml-20 -mt-10" />
 
         <ul>
