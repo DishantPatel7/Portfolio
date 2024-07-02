@@ -40,7 +40,7 @@ export const EXPERIENCES = [
     role: "Frontend Developer",
     company: "Skytech Pvt. Ltd.",
     description:
-      "During a this internship , I focused on web development with React.js, a leading JavaScriptlibrary for building userinterfaces. Throughout the internship, I honed my skills in React.js, including proficiency in component-based architecture, state management, and routing. I gained practical experience in developing dynamic and interactive web applications.",
+      "During a this internship , I focused on web development with React.js, a leading JavaScript library for building user interfaces. Throughout the internship, I honed my skills in React.js, including proficiency in component-based architecture, state management, and routing. I gained practical experience in developing dynamic and interactive web applications.",
     technologies: ["Javascript", "React.js", "HTML5", "CSS3", "Tailwind"],
   },
 ];
@@ -109,3 +109,5 @@ export const links = [
   { name: "contact", path: "contact" },
   { name: "#technologies", path: "contact" },
 ];
+export const FOOTER =
+  "All Right Reserved. © 2024 Portfolio made by Dishant Patel ";
