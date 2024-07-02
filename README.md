@@ -6,5 +6,5 @@
    #### ` cd Portfolio `
    #### ` npm install `
 
-# 3. Now run your app
+### 3. Now run your app
    #### ` npm run dev `
