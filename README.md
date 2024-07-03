@@ -2,7 +2,8 @@
 ### 1. Clone using the following repo link
 
 ``` 
-git clone https://github.com/DishantPatel7/Portfolio.git ```
+git clone https://github.com/DishantPatel7/Portfolio.git
+```
 
 ### 2. Go to the project folder and run npm install
 
