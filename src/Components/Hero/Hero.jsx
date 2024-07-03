@@ -24,7 +24,7 @@ const Hero = () => {
             </p>
             {/* btn and socials */}
             <div className="flex flex-row flex-wrap items-center justify-center gap-5 lg:justify-start">
-              <a href="Dishant's Resume.pdf" download="Dishant's Resume">
+              <a href="Dishant CV.pdf" download="Dishant's Resume">
                 <button className="flex items-center gap-3 rounded-3xl border-2 border-primary px-5 py-2 text-[16px] font-bold text-black dark:text-primary outline-0 duration-500 hover:bg-black dark:hover:bg-primary hover:text-primary dark:hover:text-black hover:transition-all">
                   <span>Download CV</span>
                   <FiDownload className="text-base" />
