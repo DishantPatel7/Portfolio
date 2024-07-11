@@ -26,7 +26,7 @@ const TopBtn = () => {
 
   return (
     <motion.a
-      onClick={() => handleScrollNav("hero")}
+      onClick={() => handleScrollNav("home")}
       initial={{ opacity: 0 }}
       animate={{ opacity: isVisible ? 1 : 0 }}
       transition={{ duration: 0.7 }}
