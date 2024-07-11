@@ -1,7 +1,4 @@
 import React from "react";
-import aboutImg from "../../assets/about.jpg";
-import img1 from "../../assets/img1.jpg";
-import img2 from "../../assets/img2.jpg";
 import { ABOUT_US } from "../../constants";
 import { motion } from "framer-motion";
 

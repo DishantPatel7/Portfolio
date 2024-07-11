@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import img from "../../assets/new-removebg-preview.png";
-import img1 from "../../assets/img1.jpg";
-import img2 from "../../assets/img2.jpg";
+import img1 from "../../assets/IMG_20240710_131807.png";
+import img2 from "../../assets/IMG_20240710_131550-removebg-preview23.png";
 
 const Photo = () => {
   return (
@@ -23,7 +23,7 @@ const Photo = () => {
           className="absolute flex h-[298px] w-[298px] items-center justify-center md:h-[375px] md:w-[375px] lg:h-[498px] lg:w-[498px]"
         >
           <img
-            src={img}
+            src={img2}
             alt=""
             className="h-full w-full rounded-[50%] object-contain"
           />
