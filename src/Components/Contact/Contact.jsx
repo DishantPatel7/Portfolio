@@ -16,7 +16,7 @@ const Contact = () => {
         Get in Touch
       </motion.h2>
       <div className="-mt-7 mb-10 text-center tracking-tight">
-        <motion.p
+        <motion.a href={`tel:${CONTACT.phoneNo}`}
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5 }}
@@ -24,7 +24,7 @@ const Contact = () => {
         >
           <FaPhone className="mr-2 text-primary" />
           {CONTACT.phoneNo}
-        </motion.p>
+        </motion.a>
         <motion.a
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
